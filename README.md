@@ -15,7 +15,7 @@ The webpage part of this project is on Github Pages, which can be found [here](h
 `ts-node` also needs to be installed with **Node.js**. The details for doing so can be found [here](https://github.com/TypeStrong/ts-node).  
 
 ## Building
-Once the prerequisites are installed, navigate to the root of the `TPSaveFileHack` directory in a command prompt, and run `yarn install`. If you start getting errors such as `Binaries/generate_data.ts:4:23 - error TS2307: Cannot find module 'path'`, then running `yarn install --check-files` from the root should resolve them.
+Once the prerequisites are installed, navigate to the root of the `TTYDSaveFileHack` directory in a command prompt, and run `yarn install`. If you start getting errors such as `Binaries/generate_data.ts:4:23 - error TS2307: Cannot find module 'path'`, then running `yarn install --check-files` from the root should resolve them.
 
 The assembly codes that will be injected into the save file are stored at `Binaries\bin`. To use them, they must be converted to strings. To convert the **bin** files to strings, run `ts-node Binaries\generate_data.ts` from the root. This will remake `BinaryData.ts`, which contains the strings for the bin files. These should then be placed inside of `WebVersion\main.ts`.  
 
