@@ -138,7 +138,7 @@ function displayResult(e) {
         return true;
     }
     else if (e === 1 /* NotSaveFile */) {
-        errorMessage.textContent = 'The file you specified was not a valid .gci save file';
+        errorMessage.textContent = 'The file you specified is not a valid .gci save file';
         return false;
     }
     else if (e === 2 /* WrongSaveFileGameID */) {
