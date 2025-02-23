@@ -179,7 +179,7 @@ function displayResult(e: PatchErrorCode): boolean {
         errorMessage.textContent = '';
         return true;
     } else if (e === PatchErrorCode.NotSaveFile) {
-        errorMessage.textContent = 'The file you specified was not a valid .gci save file';
+        errorMessage.textContent = 'The file you specified is not a valid .gci save file';
         return false;
     } else if (e === PatchErrorCode.WrongSaveFileGameID) {
         errorMessage.textContent = 'This save file is not for Paper Mario: The Thousand Year Door';
